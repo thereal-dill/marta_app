@@ -1,0 +1,148 @@
+/* static/css/styles.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #c8102e; /* MARTA Red */
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+label {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+select, input[type="text"] {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: 1.8px solid #ddd;
+    border-radius: 6px;
+    transition: border-color 0.3s ease;
+}
+
+select:focus, input[type="text"]:focus {
+    border-color: #c8102e;
+    outline: none;
+}
+
+button {
+    background-color: #c8102e;
+    color: white;
+    font-weight: bold;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #a10a23;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+}
+
+th, td {
+    padding: 0.8rem 1rem;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #c8102e;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+a.home-link {
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: #c8102e;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a.home-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .container {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    select, input[type="text"], button {
+        max-width: 100%;
+    }
+}
+
+.home-button {
+    display: inline-block;
+    background-color: #c8102e;
+    color: white;
+    font-weight: 600;
+    padding: 0.5rem 1.2rem;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+}
+
+.home-button:hover {
+    background-color: #a10a23;
+    text-decoration: none;
+}
+
+.line-red {
+    color: #c8102e; 
+    font-weight: bold;
+}
+
+.line-gold {
+    color: #d4af37; 
+    font-weight: bold;
+}
+
+.line-green {
+    color: #00FF00; 
+    font-weight: bold;
+}
+
+.line-blue {
+    color: #0000FF;
+    font-weight: bold;
+}

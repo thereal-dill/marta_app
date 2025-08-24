@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>MARTA Train Arrival Lookup</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
+</head>
+<body>
+    <h1>Welcome to MARTA Train Arrival Lookup</h1>
+    <form action="/arrivals" method="get">
+        <label for="station">Select a MARTA station:</label>
+        <select name="station" id="station" required>
+            <option value="">--Please choose a station--</option>
+            <option value="AIRPORT STATION">Airport Station</option>
+            <option value="ARTS CENTER STATION">Arts Center</option>
+            <option value="ASHBY STATION">Ashby</option>
+            <option value="AVONDALE STATION">Avondale</option>
+            <option value="BANKHEAD STATION">Bankhead</option>
+            <option value="BROOKHAVEN/OGLETHORPE STATION">Brookhaven/Oglethorpe</option>
+            <option value="BUCKHEAD STATION">Buckhead</option>
+            <option value="CHAMBLEE STATION">Chamblee</option>
+            <option value="CIVIC CENTER STATION">Civic Center</option>
+            <option value="COLLEGE PARK STATION">College Park</option>
+            <option value="DECATUR STATION">Decatur</option>
+            <option value="DORAVILLE STATION">Doraville</option>
+            <option value="DUNWOODY STATION">Dunwoody</option>
+            <option value="EAST LAKE STATION">East Lake</option>
+            <option value="EAST POINT STATION">East Point</option>
+            <option value="EDGEWOOD/CANDLER PARK STATION">Edgewood/Candler Park</option>
+            <option value="FIVE POINTS STATION">Five Points</option>
+            <option value="GARNETT STATION">Garnett</option>
+            <option value="GEORGIA STATE STATION">Georgia State</option>
+            <option value="GWCC/CNN CENTER STATION">GWCC/CNN Center</option>
+            <option value="H. E. HOLMES STATION">H. E. Holmes</option>
+            <option value="INDIAN CREEK STATION">Indian Creek</option>
+            <option value="INMAN PARK/REYNOLDSTOWN STATION">Inman Park/Reynoldstown</option>
+            <option value="KING MEMORIAL STATION">King Memorial</option>
+            <option value="LAKEWOOD/FORT MCPHERSON STATION">Lakewood/Ft. McPherson</option>
+            <option value="LENOX STATION">Lenox</option>
+            <option value="LINDENBIRGH CENTER STATION">Lindbergh Center</option>
+            <option value="MEDICAL CENTER STATION">Medical Center</option>
+            <option value="MIDTOWN STATION">Midtown</option>
+            <option value="NORTH AVENUE STATION">North Avenue</option>
+            <option value="NORTH SPRINGS STATION">North Springs</option>
+            <option value="OAKLAND CITY STATION">Oakland City</option>
+            <option value="PEACHTREE CENTER STATION">Peachtree Center</option>
+            <option value="SANDY SPRINGS STATION">Sandy Springs</option>
+            <option value="VINE CITY STATION">Vine City</option>
+            <option value="WEST END STATION">West End</option>
+            <option value="WEST LAKE STATION">West Lake</option>
+        </select>
+        <button type="submit">Check Trains</button>
+    </form>
+</body>
+</html>
