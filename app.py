@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, redirect, url_for
 import requests
 
 app = Flask(__name__)
-API_KEY = '2174640d-801f-40c4-a21f-091e7906c12e'  # Replace with your MARTA API key
+API_KEY = 'input-your-key'  # Replace with your MARTA API key
 
 def get_marta_arrivals(station):
     url = f'https://developerservices.itsmarta.com:18096/itsmarta/railrealtimearrivals/developerservices/traindata?apiKey={API_KEY}'
